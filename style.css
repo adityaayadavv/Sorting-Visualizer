@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+button, select, input[type=range] {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #292940;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover, select:hover {
+  background-color: #3e3e5e;
+}
+
+input[type=range] {
+  width: 100px;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#array-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #444;
+  max-width: 90vw;
+  overflow-x: auto;
+}
+
+.bar {
+  width: 20px;
+  margin: 0 2px;
+  background-color: #00bfff;
+  transition: height 0.3s ease, background-color 0.2s ease;
+}
+
+.bar.selected {
+  background-color: #ff6f61;
+}
